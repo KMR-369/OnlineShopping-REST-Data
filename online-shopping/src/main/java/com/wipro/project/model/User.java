@@ -3,7 +3,16 @@ package com.wipro.project.model;
 import java.util.Date;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
+@Document(collection="user")
 public class User {
 
 	@Id
@@ -19,7 +28,8 @@ public class User {
 	private String city;
 	private int pincode;
 	
-	public User() {
+	
+	/*public User() {
 		
 	}
 
@@ -115,5 +125,5 @@ public class User {
 
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
-	}
+	} */
 }
