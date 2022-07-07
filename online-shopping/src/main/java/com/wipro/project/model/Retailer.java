@@ -5,6 +5,13 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Document(collection="retailer")
 public class Retailer {
 	
@@ -22,7 +29,7 @@ public class Retailer {
 	private String city;
 	private int pincode;
 	
-	public Retailer() {
+	/*public Retailer() {
 		
 	}
 
@@ -118,6 +125,6 @@ public class Retailer {
 
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
-	}
+	} */
 
 }
