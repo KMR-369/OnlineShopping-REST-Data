@@ -5,9 +5,17 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Document(collection="admin")
 public class Admin {
-	
 	
 	@Id
 	private String id;
@@ -22,7 +30,7 @@ public class Admin {
 	private String city;
 	private int pincode;
 	
-	public Admin() {
+	/*public Admin() {
 		
 	}
 
@@ -118,7 +126,7 @@ public class Admin {
 
 	public void setPincode(int pincode) {
 		this.pincode = pincode;
-	}
+	} */
 
 	
 
