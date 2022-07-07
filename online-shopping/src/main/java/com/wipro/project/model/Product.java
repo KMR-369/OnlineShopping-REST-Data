@@ -3,6 +3,13 @@ package com.wipro.project.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Document(collection = "product")
 public class Product {
 	
@@ -14,7 +21,7 @@ public class Product {
 	private double price;
 	private String imgpath;
 	
-	public Product() {
+	/*public Product() {
 		
 	}
 
@@ -81,6 +88,6 @@ public class Product {
 
 	public void setMadein(String madein) {
 		this.madein = madein;
-	}
+	} */
 
 }
