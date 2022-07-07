@@ -3,6 +3,13 @@ package com.wipro.project.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Document(collection = "cart")
 public class Cart {
 	
@@ -15,7 +22,7 @@ public class Cart {
 	private String imgpath;
 	
 	
-	public Cart() {
+	/*public Cart() {
 		
 	}
 
@@ -98,6 +105,6 @@ public class Cart {
 
 	public void setImgpath(String imgpath) {
 		this.imgpath = imgpath;
-	}
+	} */
 
 }
