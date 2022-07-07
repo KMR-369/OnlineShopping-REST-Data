@@ -3,6 +3,13 @@ package com.wipro.project.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+import lombok.Data;
+
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 @Document(collection = "compare")
 public class Compare {
 	
@@ -14,7 +21,7 @@ public class Compare {
 	private double price;
 	private String imgpath;
 	
-	public Compare() {
+	/*public Compare() {
 
 	}
 
@@ -82,6 +89,6 @@ public class Compare {
 
 	public void setImgpath(String imgpath) {
 		this.imgpath = imgpath;
-	}
+	} */
 
 }
