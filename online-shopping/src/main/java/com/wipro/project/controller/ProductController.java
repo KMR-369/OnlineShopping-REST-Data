@@ -26,8 +26,12 @@ import com.wipro.project.repository.ProductRepository;
 @CrossOrigin(origins="http://localhost:4200")
 public class ProductController {
 	
-	@Autowired
-	private ProductRepository prepo;
+
+	private final ProductRepository prepo;
+	
+	public ProductController(ProductRepository prepo) {
+		this.prepo = prepo;
+	}
 	
 	@GetMapping("/products")
 	public List<Product> getAllProducts() {
